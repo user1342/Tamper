@@ -13,7 +13,7 @@ Tamper is a short and simple Tamper-Detection application for Android. Built fro
 
  - Device State 📱
  - System Integrity 📡
- - SD Card Tempered State 💾
+ - SD Card Tampered State 💾
 
 ## What is Google Play Safety Net
 [Google Play Safety Net](https://developer.android.com/training/safetynet/attestation) is an attestation API used on devices with Google Play functionality that allows application developers to identify if they are running on a rooted device. This is done by the application reaching out to the API and receiving two boolean variables in response: ```ctsProfileMatch``` and ```basicIntegrity```. While these variables are useful for application developers controlling what functionality runs on compromised / tampered devices there is little information on how Google Play Services come to the conclusion of these variables. While this is unknown, what is known is the variables that feed into this decision. This repo is a re-implementation of the aggregation of these variables.
