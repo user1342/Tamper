@@ -19,6 +19,7 @@ Tamper is a short and simple Tamper-Detection application for Android. Built fro
 [Google Play Safety Net](https://developer.android.com/training/safetynet/attestation) is an attestation API used on devices with Google Play functionality that allows application developers to identify if they are running on a rooted device. This is done by the application reaching out to the API and receiving two boolean variables in response: ```ctsProfileMatch``` and ```basicIntegrity```. While these variables are useful for application developers controlling what functionality runs on compromised / tampered devices there is little information on how Google Play Services come to the conclusion of these variables. While this is unknown, what is known is the variables that feed into this discision. This repo is a re-implementation of the aggregation of these variables.
 
 ## Currently implemented 
+<img align="right" width="150" height="150" src="Images\fingerprint.png">
 The versions of Google Play SNet are undocumented, however, in the 12 versions that I have reviewed I have identified ~55 variable types. The below denaotes which of these groups are currently re-implemented in this application:
 
 - Device Data ✔️
